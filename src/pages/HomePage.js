@@ -1,7 +1,12 @@
 const HomePage = () => {
     return(
         <div className="homepageContainer">
-            
+            <div >
+                
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 }
