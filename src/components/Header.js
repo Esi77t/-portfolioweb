@@ -4,10 +4,12 @@ import "../css/Header.css";
 const Header = () => {
     return (
         <div className="headerContainer">
-            <Link to="/">
-                Portfolio
-            </Link>
-            <div>
+            <div className="homePageButton">
+                <Link to="/">
+                    Portfolio
+                </Link>
+            </div>
+            <div className="pageButton">
                 <Link to="/projects">
                     Projects
                 </Link>
