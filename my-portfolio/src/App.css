@@ -1,0 +1,181 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  background: #e0e0e0;
+}
+
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .zoom-img {
+  transform: scale(1.1);
+}
+
+.home-container {
+  padding: 0 100px 100px;
+}
+
+.section {
+  margin-top: 80px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+
+/* 카드 공통 스타일 */
+.card {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.category {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+}
+
+/* 이미지 확대 효과 (핵심!) */
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #e0e0e0;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .zoom-img {
+  transform: scale(1.1);
+}
+
+/* Grid 레이아웃 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+
+.detail-container {
+  padding: 80px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.title-group h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.category-label {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.link-group {
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.main-image {
+  width: 100%;
+  background: #f0f0f0;
+  margin-bottom: 40px;
+}
+
+.main-image img {
+  width: 100%;
+  display: block;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.5;
+}
+
+.main-header {
+  background-color: #e0e0e0; /* 와이어프레임의 배경색 */
+  padding: 20px 100px;
+  position: sticky; /* 스크롤 내려도 상단에 고정하고 싶다면 추가 */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #000;
+}
